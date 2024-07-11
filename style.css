@@ -15,6 +15,9 @@ body {
 .form-header {
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .info-text{
     border: 2px solid #bf9456 ;
@@ -38,8 +41,8 @@ body {
 .college-dropdown {
     width: 100%;
     padding: 10px 0px;
-    background-color: black; /* Black background */
-    color: white; /* White text */
+    background-color: white; /* Black background */
+    color: black; /* White text */
     border: none;
     border-bottom: 2px solid #bf9456; /* Border color to match the theme */
     border-radius: 5px;
@@ -82,6 +85,10 @@ body {
 .form-content {
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 20px;
+    box-shadow: 0px -12px 1px #bf9456;
 }
 
 .form-group {
@@ -100,7 +107,7 @@ input,
     padding: 10px;
     border: none;
     font-size: 16px;
-    background-color: black; /* Match the background color */
+    background-color: white; /* Match the background color */
     border-bottom: 2px solid #bf9456; /* Black bottom border */
     border-radius: 0;
     color: white;
@@ -113,34 +120,23 @@ input,
     resize: vertical;
 }
 
-.custom-file-upload {
-   border: none;
-   border-bottom: 1px solid #bf9456;
-}
-
-.custom-file-upload i {
-    margin-right: 5px;
-}
-
-
-
-
 button {
     width: 100%;
     padding: 10px;
     background-color: #bf9456; /* Use the background color */
     color: black; /* White text color */
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 7px;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    /* cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; */
 }
 
 button:hover {
     background-color: black; /* Change to black on hover */
-    color: #bf9456; /* Text color changes to background color */
+    color: #bf9456;
 }
+
 .footer-links a {
     color: #333;
     margin: 0 10px;
@@ -151,12 +147,48 @@ button:hover {
     text-decoration: underline;
 }
 
+
+
 @media (max-width: 600px) {
-    .container {
-        padding: 10px;
+    .container-fluid {
+        padding: 0px;
     }
+
+    .form-header {
+        text-align: center;
+        order: 2; /* Place form-header below form-content */
+        margin-bottom: 20px;
+    }
+    
     .form-content {
-        flex-direction: column;
-        align-items: center;
+        margin-top: 20px;
+        padding: 0; /* Remove padding */
+        border: none; /* Remove border */
+        order: 1; /* Ensure form-content is above form-header */
+    }
+
+    .info-text,
+    .form-header .logo,
+    .form-header h1,
+    .form-header p {
+        width: 100%;
+        padding: 0; /* Remove padding */
+    }
+    .form-header h1{
+        font-size: 150%;
+        margin-top: 20px;
+    }
+    .form-header p{
+        padding: 10px;
+        
+    }
+    .form-gif img {
+        margin-right: 0%;
+    }
+
+    .logo {
+        margin: 0px 100px 0px;
+        width: 50%;
+        height: auto;
     }
 }
