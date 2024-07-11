@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Consulting Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="form-header col-md-6">
+                <img src="logo\Forge_Alumnus_Logo_White.png" alt="forge Logo" class="logo">
+                <h1 class="col-md-6">Let's <span class="span-p">Scale</span> The <span class="span-p">Future</span>, Together</h1>
+                <div class="info-text ms-0 m-5">
+                    <p>As a proud alumnus of Forge, we are dedicated to supporting our community through a wide range of initiatives. Our services include engaging hackathons, codeathons, and ideathons, where you can showcase your creativity and problem-solving skills. We offer workshops led by industry experts, networking sessions to connect you with professionals and peers, and comprehensive support for pursuing higher education. Additionally, we provide robust job and internship assistance to help you secure meaningful opportunities. Join us and take advantage of these valuable resources to enhance your journey at Forge!</p>
+                </div>
+                <p>Accelarate your future @forgealumnus.com</p>
+                <div class="form-gif">
+                    <img src="logo\left-bg.gif" alt="Form illustration" >
+                </div>
+            </div>
+            <div class="form-content col-md-6 mt-5">
+                <form class="row">
+                    <div class="form-head form-group mb-5 text-light">
+                       <h1>COLLEGE CANDIDATE APPLICATION</h1>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="college-name">College Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="college-website">College Website *</label>
+                        <input type="url" id="college-website" name="college-website" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="college-email">College Email*</label>
+                        <input type="email" id="college-email" name="college-email" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="college-phone">College Phone *</label>
+                        <input type="tel" id="college-phone" name="college-phone" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="college-location">College Location *</label>
+                        <input type="college-location" id="college-location" name="college-location" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="college-type">College Type*</label>
+                        <select id="college-type" class="college-dropdown">
+                            <option value="" disabled selected>Select College Type</option>
+                            <option value="university">University</option>
+                            <option value="institution">Institution</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="about">About College *</label>
+                        <textarea id="about" name="about" required></textarea>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="offer-detail">Please detail your offer/discount here. Include details about the amount of the discount, what it covers, and how to receive it.</label>
+                        <textarea id="offer-detail" name="offer-detail" required></textarea>
+                    </div>
+                    <div class="form-group col-md-12 text-light">
+                      <h6>COLLEGE REPRESENTATIVE INFORMATION</h6>
+                      <p>(This information is for internal use only and will not be shared on our website.)</p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="first-name"> First Name*</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="last-name"> Last Name*</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="title"> Title*</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="email"> Email ID*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="phone"> Phone*</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="mou">Upload MOU</label>
+                        <input type="file" id="mou" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="logo">Upload Logo</label>
+                        <input type="file" id="logo" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="refer-by">Refered By</label>
+                        <input type="text" id="refer-by" required>
+                    </div>
+                    <button type="submit" class="col-md-12">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-links text-center mt-5">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Insurance Licenses</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

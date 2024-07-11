@@ -1,0 +1,162 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    /* font-family: var(--uicore-typography--h2-f, "Inter"); */
+    font-style: var(--uicore-typography--h2-st, "normal");
+    margin: 0;
+    padding: 0;
+    color: #bf9456;
+}
+
+.container-fluid {
+    padding: 70px;
+    background-color: black;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info-text{
+    border: 2px solid #bf9456 ;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: justify;
+}
+.span-p
+{
+    color:#bf9456;
+}
+.logo {
+    height: auto;
+    margin-bottom: 10px;
+    justify-content: left;
+    display: flex;
+    width: 25%;
+    position: relative;
+    left: -35px;
+}
+.college-dropdown {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none;
+    border-bottom: 2px solid #bf9456; /* Border color to match the theme */
+    border-radius: 5px;
+    appearance: none; /* Remove default dropdown arrow */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+}
+
+
+
+.college-dropdown:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 2px #bf9456; /* Add a subtle glow on focus */
+}
+
+.form-gif img
+{
+    margin-right: 20%;
+}
+.form-header h1 {
+    width: 95%;
+    font-weight: revert;
+    text-align: left;
+    font-size: 70px;
+    margin: 0 0 10px;
+    color: white;
+}
+.form-gif img{
+    width: 90%;
+    align-content: flex-start;
+}
+
+.form-header p {
+   color: #bf9456;
+    margin: 0 0 20px;
+    display: flex;
+    font-weight: 700;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: black; /* Match the background color */
+    border-bottom: 2px solid #bf9456; /* Black bottom border */
+    border-radius: 0;
+    color: white;
+    box-shadow: none; /* Remove any default shadow */
+    outline: none; /* Remove outline on focus */
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.custom-file-upload {
+   border: none;
+   border-bottom: 1px solid #bf9456;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+
+
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bf9456; /* Use the background color */
+    color: black; /* White text color */
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: black; /* Change to black on hover */
+    color: #bf9456; /* Text color changes to background color */
+}
+.footer-links a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .form-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
